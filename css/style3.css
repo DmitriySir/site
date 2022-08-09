@@ -1,0 +1,385 @@
+@font-face{
+    font-family: LakeB;
+    src: url('../fonts/TTLakes-Bold.ttf');
+}
+
+@font-face{
+    font-family: Lakes;
+    src: url('../fonts/TTLakes-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    
+    height: 234px;
+    background: #F2F2F2;
+ }
+
+@media(min-width: 768px){
+  body{
+    height: /*322px*/ 450px;
+    background: #F2F2F2;}
+}
+
+.header{
+    display: flex;
+    background:linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    padding: 16px;
+}
+
+@media(min-width: 768px){
+  .header{
+    display: flex;
+    background:linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    padding: 15px 406px 15px 24px;
+}
+}
+
+.header__title{
+    height: 48px;
+    font-family: Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #7E7E82;
+}
+
+@media(min-width: 768px){
+  .wrapper{
+    display: none;
+  }
+}
+
+#b1:checked ~ .slider-img > img{
+    transform: translate(0px);
+    transition: 0.3s;
+  }
+  
+#b2:checked ~ .slider-img > img{
+    transform: translate(-240px);
+    transition: 0.3s;
+  }
+  
+#b3:checked ~ .slider-img > img{
+    transform: translate(-480px);
+    transition: 0.3s;
+  }
+  
+#b4:checked ~ .slider-img > img{
+    transform: translate(-720px);
+    transition: 0.3s;
+  }
+
+#b5:checked ~ .slider-img > img{
+    transform: translate(-960px);
+    transition: 0.3s;
+  }
+
+#b6:checked ~ .slider-img > img{
+    transform: translate(-1200px);
+    transition: 0.3s;
+  }
+
+#b7:checked ~ .slider-img > img{
+    transform: translate(-1440px);
+    transition: 0.3s;
+  }
+
+#b8:checked ~ .slider-img > img{
+    transform: translate(-1680px);
+    transition: 0.3s;
+  }
+
+#b9:checked ~ .slider-img > img{
+    transform: translate(-1920px);
+    transition: 0.3s;
+  }
+
+#b10:checked ~ .slider-img > img{
+    transform: translate(-2160px);
+    transition: 0.3s;
+}
+
+
+.slider-img{
+    display: flex;
+    overflow: hidden;
+  }
+
+img{
+    margin: 16px 5px 16px 0px;
+    width: 240px;
+    height: 72px;
+  }
+  
+.showAll{
+  display: none;
+  }
+
+@media(min-width: 768px){
+  .showAll{
+    display: flex;
+    height: 30px;
+    margin: auto;
+  }
+  }
+  .showAll__arrow{
+    background-image: url("../img/icon.svg");
+    width: 7.41px;
+    height: 10.29px;
+    margin: 32px 17px 0 32px;
+  }
+
+.showAll__text{
+  font-family: LakeB;
+  font-style: normal;
+  font-size: 16px;
+  /*font-weight: 500;*/
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+
+}
+
+
+.check__box{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-image: url("../img/ButNormal.svg");
+       
+  }
+
+.check__input{
+    position: absolute;
+    appearance: none;
+}
+
+label{
+    padding: 0 24px 0 0;
+    cursor: pointer;
+}
+
+.wrapper__button{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 58px;
+}
+
+@media(min-width: 768px){
+  .wrapper__button{
+    display: none;
+  }
+}
+
+@media(min-width: 1120px){
+  .wrapper__button{
+    display: none;
+  }
+}
+
+#b1:checked ~ .wrapper__button label .b1b{
+    background-image: url("../img/ButCheked.png");
+}
+
+#b2:checked ~ .wrapper__button label .b2b{
+    background-image: url("../img/ButCheked.png");
+}
+
+#b3:checked ~ .wrapper__button label .b3b{
+    background-image: url("../img/ButCheked.png");
+}
+
+#b4:checked ~ .wrapper__button label .b4b{
+    background-image: url("../img/ButCheked.png");
+}
+
+#b5:checked ~ .wrapper__button label .b5b{
+    background-image: url("../img/ButCheked.png");
+}
+
+#b6:checked ~ .wrapper__button label .b6b{
+    background-image: url("../img/ButCheked.png");
+}
+
+#b7:checked ~ .wrapper__button label .b7b{
+    background-image: url("../img/ButCheked.png");
+}
+
+#b8:checked ~ .wrapper__button label .b8b{
+    background-image: url("../img/ButCheked.png");
+}
+
+#b9:checked ~ .wrapper__button label .b9b{
+    background-image: url("../img/ButCheked.png");
+}
+
+.detailsTabl{
+  display: none;
+}
+
+.detailsPc{
+  display: none;
+}
+
+details{
+  list-style: none;
+}
+@media(min-width: 768px){
+  .detailsTabl{
+    display: flex;
+    max-width: 768px;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+@media(min-width: 768px){
+  img{
+    margin: 24px 12px 0 0;
+    width: 224px;
+    height: 72px
+  }
+  img:nth-child(1){
+    margin: 24px 12px 0 24px;
+  }
+
+  details img:nth-child(1){
+    margin: 0;
+  }
+  .detailsPc{
+    display: none;
+  }
+}
+
+summary::marker{
+  content:'';
+  
+}
+
+summary:before {
+  content: url('../img/icon.svg') "   Показать полностью";
+  position: absolute;
+  top: 300px;
+  font-family: Lakes;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  }
+ 
+ 
+  details[open] summary:before {
+  content: url('../img/iconUp.svg') "   Скрыть"  ;
+  top: 380px;
+  }
+
+  @media(min-width: 768px){
+  .detailsTabl{
+    display: flex;
+    max-width: 768px;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+@media(min-width: 768px){
+  img{
+    margin: 24px 12px 0 0;
+    width: 224px;
+    height: 72px
+  }
+  img:nth-child(1){
+    margin: 24px 12px 0 24px;
+  }
+
+  details img:nth-child(1){
+    margin: 0;
+  }
+}
+
+summary::marker{
+  content:'';
+  
+}
+
+summary:before {
+  content: url('../img/icon.svg') "   Показать полностью";
+  position: absolute;
+  top: 300px;
+  font-family: Lakes;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  transition-duration: 1s;
+  }
+ 
+ 
+  details[open] summary:before {
+  content: url('../img/iconUp.svg') "   Скрыть"  ;
+  top: 380px;
+  transition-duration: 1s;
+  }
+
+  /*1120*/
+
+ @media(min-width: 1120px){
+  
+.detailsTabl{
+  display: none;
+}
+
+.detailsPc{
+      display: flex;
+      max-width: 1120px;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+
+img{
+      margin: 16px 16px 0 0;
+      width: 240px;
+      height: 72px
+    }
+img:nth-child(1){
+margin: 24px 12px 0 32px;
+}
+
+details img:nth-child(1){
+  margin-right: 16px;
+    }
+
+  
+  summary::marker{
+    content:'';
+    
+  }
+  
+  summary:before {
+    content: url('../img/icon.svg') "   Показать полностью";
+    position: absolute;
+    top: 300px;
+    font-family: Lakes;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    transition-duration: 1s;
+    }
+   
+   
+    details[open] summary:before {
+    content: url('../img/iconUp.svg') "   Скрыть"  ;
+    top: 380px;
+    transition-duration: 1s;
+    }
+  
+}
