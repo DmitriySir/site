@@ -201,15 +201,14 @@ body{
 }
 
 
-
-.span{
+.swiper-slide__background{
     background: url('../img/1.5/back.svg') no-repeat;
     width: 240px;
     height: 72px;
     display: flex;
 }
 
-.inSpan{
+.swiper-slide__circle{
     background: url('../img/1.5/go.svg') no-repeat;
     width: 40px;
     height: 40px;
@@ -271,7 +270,7 @@ body{
 } 
 
 @media(min-width: 768px){
-    .span{
+    .swiper-slide__background{
         background: url('../img/1.5/back.svg') no-repeat;
         width: 224px;
         height: 72px;
@@ -279,7 +278,7 @@ body{
         
     }
     
-    .inSpan{
+    .swiper-slide__circle{
         background: url('../img/1.5/go.svg') no-repeat;
         width: 40px;
         height: 40px;
@@ -342,7 +341,7 @@ body{
 }
 
 @media(min-width: 1120px){
-    .span{
+    .swiper-slide__background{
         background: url('../img/1.5/back.svg') no-repeat;
         width: 240px;
         height: 72px;
@@ -350,7 +349,7 @@ body{
         
     }
     
-    .inSpan{
+    .swiper-slide__circle{
         background: url('../img/1.5/go.svg') no-repeat;
         width: 40px;
         height: 40px;
@@ -436,7 +435,7 @@ body{
     width: 100% !important;
 }
 
-.swiper-slide:hover .inSpan{
+.swiper-slide:hover .swiper-slide__circle{
     box-shadow: inset 0 0 4px 4px #39c0a3;
     border-radius: 50%;
 }
